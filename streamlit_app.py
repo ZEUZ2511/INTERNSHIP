@@ -1,11 +1,7 @@
-# streamlit_app.py
 import streamlit as st
 import pandas as pd
 import numpy as np
 
-# ------------------------------------------------------------
-# Cached data generation (prevents rerunning on every click)
-# ------------------------------------------------------------
 @st.cache_data
 def generate_sample_users(n=500):
     """Create synthetic user data when no file is uploaded."""
